@@ -15,7 +15,7 @@ function draw() {
     var volume = mic.getLevel();
     var r = map(volume,0,0.1,0,100);
     var x = 7
-    image(myImage,0,0-r/50,360,640)
+    image(myImage,0,0,360,640)
     
     //unlightened
     noStroke();
@@ -120,4 +120,12 @@ function draw() {
     fill(67,239,96,r);
     ellipse(245,390+r/25,x,x);
     
+    //merry christmas
+    textFont('Pacifico')
+    textSize(14)
+    textAlign(CENTER)
+    fill(237,83,58)
+    text("merry X'mas",width/2,480)
 }
+
+
